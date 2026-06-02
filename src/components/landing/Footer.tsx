@@ -46,7 +46,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-accent">Connect</h3>
             <div className="flex gap-3 mb-4">
-              {[Instagram, Facebook, Youtube, Mail].map((Icon, i) => (
+              {[Instagram, Facebook, Youtube, TikTokIcon, Mail].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all" aria-label="Social link">
                   <Icon className="h-4 w-4" />
                 </a>
