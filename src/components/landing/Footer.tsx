@@ -46,8 +46,14 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-accent">Connect</h3>
             <div className="flex gap-3 mb-4">
-              {[Instagram, Facebook, Youtube, TikTokIcon, Mail].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all" aria-label="Social link">
+              {[
+                { Icon: Instagram, href: "https://www.instagram.com/striving4jannah12/", label: "Instagram" },
+                { Icon: Facebook, href: "https://www.facebook.com/strivingforjannah12/", label: "Facebook" },
+                { Icon: Youtube, href: "https://www.youtube.com/@striving4jannah", label: "YouTube" },
+                { Icon: TikTokIcon, href: "https://www.tiktok.com/@striving4jannah12", label: "TikTok" },
+                { Icon: Mail, href: "mailto:contact@striving4jannah.com", label: "Email" },
+              ].map(({ Icon, href, label }) => (
+                <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all" aria-label={label}>
                   <Icon className="h-4 w-4" />
                 </a>
               ))}
