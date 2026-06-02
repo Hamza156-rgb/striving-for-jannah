@@ -57,7 +57,7 @@ export const Footer = () => {
                 </a>
               ))}
             </div>
-            <p className="text-sm text-primary-foreground/70">contact@striving4jannah.com</p>
+            <p className="text-sm text-primary-foreground/70">strivingforjannah@gmail.com</p>
           </div>
         </div>
 
