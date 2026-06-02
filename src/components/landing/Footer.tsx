@@ -1,4 +1,15 @@
 import { Facebook, Instagram, Mail, Youtube } from "lucide-react";
+
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
+    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.88-2.89 2.89 2.89 0 012.88-2.89c.3 0 .58.05.84.13V9.2a6.76 6.76 0 00-.84-.05A6.28 6.28 0 003.5 15.43a6.28 6.28 0 006.29 6.28 6.28 6.28 0 006.28-6.28v-6.9a8.17 8.17 0 004.77 1.52V6.7a4.85 4.85 0 01-3.25-.01z" />
+  </svg>
+);
 import logo from "@/assets/logo.png";
 
 export const Footer = () => {
@@ -35,7 +46,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4 text-accent">Connect</h3>
             <div className="flex gap-3 mb-4">
-              {[Instagram, Facebook, Youtube, Mail].map((Icon, i) => (
+              {[Instagram, Facebook, Youtube, TikTokIcon, Mail].map((Icon, i) => (
                 <a key={i} href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground flex items-center justify-center transition-all" aria-label="Social link">
                   <Icon className="h-4 w-4" />
                 </a>
