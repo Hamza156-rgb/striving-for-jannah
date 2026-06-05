@@ -20,8 +20,8 @@ export const CTA = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="hero" size="xl" asChild>
-                <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
-                  <Download className="h-5 w-5" /> Download on Google Play
+                <a href="https://drive.google.com/uc?export=download&id=1fBvSMVLHycGfR1eBzD9ii5pz8r8UbtHG" target="_blank" rel="noopener noreferrer">
+                  <Download className="h-5 w-5" /> Download APK (Beta)
                 </a>
               </Button>
               <Button variant="outlineGold" size="xl" asChild>
@@ -30,6 +30,9 @@ export const CTA = () => {
                 </a>
               </Button>
             </div>
+            <p className="text-primary-foreground/60 text-sm mt-6">
+              Not yet on the Play Store — install the APK directly. You may need to allow installs from your browser in Android settings.
+            </p>
           </div>
         </div>
       </div>
